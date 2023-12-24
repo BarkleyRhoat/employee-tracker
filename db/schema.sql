@@ -1,9 +1,0 @@
-DROP DATABASE IF EXISTS turtle_db;
-CREATE DATABASE turtle_db;
-
-USE turtle_db;
-
-CREATE TABLE island (
-  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-  name VARCHAR(30)
-);
