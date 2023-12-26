@@ -9,8 +9,11 @@
   "author": "Barkley Rhoat",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.18.2",
     "inquirer": "^8.2.4",
     "mysql2": "^3.6.5",
+    "node.js": "^0.0.1-security",
+    "readline": "^1.3.0",
     "table": "^6.8.1"
   }
 }
