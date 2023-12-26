@@ -39,24 +39,32 @@ const init = async () => {
         case 'View all employees':
             await viewAllEmployees();
             break;
+        case 'View all Roles':
+            await viewAllRoles();
+            break;
         case 'Add a department':
             await addDepartment();
             break;
-        // Add cases for other choices
+        
     }
 
     db.end(); // Close the database connection when done
 };
 
 const viewAllDepartments = async () => {
-    const results = await db.query('SELECT * FROM department;');
+    const results = await db.query('SELECT * FROM departments;');
     const data = results[0];
+    console.log('Retrieved data:', data);
     const arrOfArr = data.map(row => Object.values(row));
     console.log(table(arrOfArr));
 };
 
 const viewAllEmployees = async () => {
-    // Implement logic for viewing all employees
+    const results = await db.query('SELECT * FROM employees;');
+    const data = results[0];
+    const arrOfArr = data.map(row => Object.values(row));
+    console.log(table(arrOfArr))
+    
 };
 
 const addDepartment = async () => {
