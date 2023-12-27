@@ -28,7 +28,6 @@ const init = async () => {
             'View All Departments',
             'Add Department',
             'Quit'
-
         ],
     });
 
