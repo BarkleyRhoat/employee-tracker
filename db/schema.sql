@@ -8,11 +8,11 @@ CREATE TABLE department (
     department_name VARCHAR(50) NOT NULL 
 );
 
-CREATE TABLE role (
+CREATE TABLE roles (
     role_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL,
-    department_id INT AUTO_INCREMENT,
+    department_id INT,
     FOREIGN KEY (department_id) REFERENCES department(department_id)
 );
 
@@ -20,9 +20,9 @@ CREATE TABLE employee (
     employee_id INT PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
-    role_id INT AUTO_INCREMENT,
+    role_id INT,
     manager_id INT,
-    department_id INT AUTO_INCREMENT, 
+    department_id INT, 
     FOREIGN KEY (role_id) REFERENCES role(role_id),
     FOREIGN KEY (manager_id) REFERENCES employee(employee_id),
     FOREIGN KEY (department_id) REFERENCES department(department_id) 
