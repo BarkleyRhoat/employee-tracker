@@ -23,11 +23,11 @@
   n/a
   ## Testing
 
-  Link for video walkthrough 
+  Link for video walkthrough: https://drive.google.com/file/d/16HPfSo7rbIj00tVRtnTWQA8sYiCrQpFk/view
 
-![screenshot]()
-![screenshot]()
-![screenshot]()
+
+![screenshot](./main/images/employeetracker1.png)
+![screenshot](./main/images/employeetracker2.png)
 
 ## credits
 
